@@ -88,4 +88,11 @@ describe Bar do
         bar = Bar.new(name, menuItems)
         expect(bar.welcome).to eq(nil)
     end
+
+    it "should define a print menu method" do
+        name = "Loske's bar"
+        menuItems = {caffelatte: 2.00, espresso: 1.00}
+        bar = Bar.new(name, menuItems)
+        expect(bar.printMenu).to eq(nil)
+    end
 end

@@ -28,4 +28,14 @@ class Bar
     def welcome
         puts "Welcome to #{@name}!"
     end
+
+    def printMenu
+        @menu.display
+    end
 end
+
+name = "Loske's bar"
+menuItems = {caffelatte: 2.00, espresso: 1.00}
+bar = Bar.new(name, menuItems)
+bar.welcome
+bar.printMenu

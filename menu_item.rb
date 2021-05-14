@@ -10,4 +10,8 @@ class MenuItem
     # def price
     #     return @price
     # end
+
+    def to_s #return a string
+        return "#{@name}: " + " " *(10 - @name.length)+ "#{@price}"
+    end
 end
