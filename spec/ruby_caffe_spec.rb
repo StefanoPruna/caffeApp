@@ -82,4 +82,10 @@ describe Bar do
         bar.addToOrder(item, quantity)
         expect(bar.getOrder().get_items().length).to be(1)
     end
+    it "should define a welcome method" do
+        name = "Loske's bar"
+        menuItems = {caffelatte: 2.00, espresso: 1.00}
+        bar = Bar.new(name, menuItems)
+        expect(bar.welcome).to eq(nil)
+    end
 end

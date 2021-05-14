@@ -24,4 +24,8 @@ class Bar
     def getOrder
         return @order
     end
+
+    def welcome
+        puts "Welcome to #{@name}!"
+    end
 end
